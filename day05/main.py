@@ -1,4 +1,3 @@
-import sys
 from itertools import repeat
 from multiprocessing.pool import Pool
 
@@ -10,7 +9,7 @@ def main():
     data = read_lines('./input/input.txt')
     # part 1
     print(min_seed(data, parse_seeds_v1))
-    # part 2
+    # part 2: this is just brute-force with some parallelization
     print(min_seed(data, parse_seeds_v2))
 
 
